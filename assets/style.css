@@ -1,0 +1,89 @@
+/* Centralizing Box*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* Main */
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem;
+    border: 3px solid rgb(26, 104, 177);
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.6);
+    padding: 3rem;
+}
+
+/* Title */
+.main .title h1{
+    text-align: center;
+    margin: 0.4rem 0;
+}
+
+/*Input Your Guess */
+
+.yourGuess {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.9rem 0.5rem;
+}
+
+.yourGuess p {
+    margin: 0.9rem 0.5rem;
+}
+
+.yourGuess input {
+    border: 1px solid rgb(175, 175, 175);
+    padding: 0.2rem 0;
+}
+
+/* Attemps */
+
+.attemps {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Guess */
+.guess {
+    display: flex;
+    justify-content: space-between;
+}
+
+#msgGuess {
+    text-align: center;
+    margin-top: -1.4rem;
+}
+
+/*btn*/
+
+.btn {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.btn .submit {
+    padding: 0.2rem 1rem;
+    color: rgb(0, 0, 0);
+    background: rgb(50, 231, 50);
+    border-radius: 1rem;
+}
+
+.btn .updateGame {
+    padding: 0.2rem 1rem;
+    color: rgb(0, 0, 0);
+    background: rgb(50, 98, 231);
+    border-radius: 1rem;
+}
+
+
+.result {
+    text-align: center;
+    font-size: 1.8rem;
+}

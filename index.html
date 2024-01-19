@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+
+    <!--Normalize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/style.css">
+
+</head>
+<body>
+
+    <!--Main-->
+    <section class="main">
+        <!--Title-->
+        <div class="title">
+            <h1>Guess the number</h1>
+            <h1>1 - 100</h1>
+        </div>
+
+        <!--Input Number (Guess)-->
+        <div class="yourGuess">
+            <p>Your Guess:</p>
+            <input type="text" id="number">
+        </div>
+        <!--Mensagem (Erro)-->
+            <p id="msgGuess"></p>
+
+
+        <!--Number of attemps -->
+        <div class="attemps">
+            <p>Numeber of attemps:</p>
+            <p id="attemp">0</p>
+        </div>
+
+        <!--Number already send-->
+        <div class="guess">
+            <p>Your guesses:</p>
+            <p id="guess">0</p>
+        </div>
+
+        <!--Buttons-->
+        <section class="btn">
+            <div class="btnSubmit">
+                <button id="submit" class="submit" type="submit" onclick="verification()" >SUBMIT</button>
+            </div>
+            <div class="btnNewGame">
+                <button class="updateGame" onclick="updateGame()" >NEW GAME</button>
+            </div>
+        </section>
+        <p id="result" class="result"></p>
+    </section>
+
+
+    
+
+
+    <!--JavaScript-->
+    <script src="./assets/script.js"></script>
+
+    <script>
+        //Clear input
+        document.getElementById('submit').addEventListener('click', function (){
+            document.getElementById('number').value = '';
+        })
+    </script>
+</body>
+</html>
